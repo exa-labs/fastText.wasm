@@ -9,3 +9,6 @@ parserOptions:
 root: true
 plugins:
   - "@typescript-eslint"
+ignorePatterns:
+  - dist/
+  - node_modules/
