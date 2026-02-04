@@ -1,21 +1,27 @@
 {
-  "name": "fasttext.wasm",
-  "version": "1.0.1",
-  "description": "Webassembly version of fastText",
-  "homepage": "https://github.com/DreamOfIce/fasttext.wasm#readme",
+  "name": "@exa-labs/fasttext-wasm",
+  "version": "1.1.0",
+  "description": "Webassembly version of fastText (exa fork with noEos support)",
+  "homepage": "https://github.com/exa-labs/fastText.wasm#readme",
   "bugs": {
-    "url": "https://github.com/DreamOfIce/fasttext.wasm/issues"
+    "url": "https://github.com/exa-labs/fastText.wasm/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DreamOfIce/fasttext.wasm.git"
+    "url": "git+https://github.com/exa-labs/fastText.wasm.git"
   },
   "license": "MIT",
   "author": {
-    "name": "冰雪殇璃陌梦",
-    "email": "admin@dreamofice.cn",
-    "url": "https://www.dreamofice.cn"
+    "name": "Exa Labs",
+    "url": "https://exa.ai"
   },
+  "contributors": [
+    {
+      "name": "冰雪殇璃陌梦 (original author)",
+      "email": "admin@dreamofice.cn",
+      "url": "https://www.dreamofice.cn"
+    }
+  ],
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -64,11 +70,7 @@
     "typescript": "^5.1.6",
     "vitest": "^0.33.0"
   },
-  "pnpm": {
-    "overrides": {
-      "ts-node": "npm:@dreamofice/ts-node@^10.9.2"
-    }
-  },
+  "pnpm": {},
   "engines": {
     "node": ">=14.15.0"
   }
